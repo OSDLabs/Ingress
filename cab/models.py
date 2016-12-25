@@ -11,10 +11,10 @@ class ticket(models.Model):
 	cab_type = models.IntegerField() #Seating Capacity
 
 class booked_ticket(models.Model):
-	ticket = models.ForeignKey(ticket, related_name = "ticket", on_delete = models.CASCADE)
+	ticket = models.ForeignKey(ticket, related_name = "booked_ticket", on_delete = models.CASCADE)
 	booker = models.ForeignKey(User, related_name = "booker", on_delete = models.CASCADE)
 
 class interested_ticket(models.Model):
-	ticket = models.ForeignKey(ticket, related_name = "ticket", on_delete = models.CASCADE)
+	ticket = models.ForeignKey(ticket, related_name = "interested_ticket", on_delete = models.CASCADE)
 	interested = models.ForeignKey(User, related_name = "interested", on_delete = models.CASCADE)
 
