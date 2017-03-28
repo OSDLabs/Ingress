@@ -1,4 +1,4 @@
-#Ingress
+# Ingress
 A Portal for BITS
 
 ### Installation
@@ -40,8 +40,8 @@ $ python3 manage.py createsuperuser
 ```
 $ python3 manage.py runserver
 ```
-##Application info
-###Infographics
+## Application info
+### Infographics
 What is it?
 
 **Displays various information and analyzes the course structure/syllabus etc. of our institute**
@@ -52,7 +52,7 @@ To setup:
 
 * Visit the url `/infographics/setup` to save data to the db
 
-###Cab
+### Cab
 What is it?
 
 **A cab sharing app**
