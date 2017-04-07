@@ -25,6 +25,7 @@ $ ingress\Scripts\activate
 * db.sqlite3 is the database for this repository, you can delete that if you want to start with a fresh database and follow: (But not required and can skip this step)
 
 ```
+$ touch ingress/credentials.py
 $ python3 manage.py makemigrations
 $ python3 manage.py migrate
 ```
